@@ -1,0 +1,136 @@
+.formulario__text{
+text-align: center;
+    margin-top: 24px;
+}
+
+.formulario__text h2, .formulario__text p{
+margin: 0;
+}
+
+.formulario__text h2{
+    margin: 8px 0px 16px 0px;
+}
+
+.formulario__progress_bar{
+    padding: 20px;
+}
+
+.formulario__progress_bar div{
+    height: 12px;
+    border-radius: 20px;
+}
+
+.formulario__progress_bar__extern{
+    width: 100%;
+    background-color: var(--grey-border);
+    
+
+}
+
+.formulario__progress_bar__intern{
+    
+    background-color: var(--green-button);
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.formulario__form{
+    text-align: center;
+    margin-bottom: 12px;
+    max-height: 380px;
+    overflow-y: auto;
+    
+}
+.formulario__form h3{
+    margin: 8px 0px 16px 0px;
+    font-weight: normal;
+
+}
+
+.formulario__form_ask{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+.formulario__form_ask__type{
+    text-align: center;
+    width: 120px;
+    height:32px;
+    background-color: var(--green-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: var(--green-button);
+    font-size: 14px;
+
+}
+
+.formulario__form_group{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 8px 8px 16px;
+    margin-top: 8px;
+    border: 1px solid var(--grey-border);
+    border-radius: 15px;
+    cursor: pointer;
+    min-height: 48px;
+    font-size: 14px;
+    text-align: start;
+    
+}
+
+.formulario__form_group input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-border);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 18px;
+}
+
+
+.formulario__form_group input[type="radio"]::before {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background-color: var(--green-button);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+
+
+.formulario__form_group input[type="radio"]:checked {
+    border-color: var(--green-button);
+}
+
+.formulario__form_group input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+.formulario__form_group:hover input[type="radio"] {
+    border-color: var(--green-shadow);
+}
+
+
+.formulario__form_group:hover{
+    border: 1px solid var(--green-shadow);
+
+}
+
+.formulario__form_group:has(input:checked) {
+    background-color: var(--green-background);
+    border: 1px solid var(--green-button);
+}
+
+

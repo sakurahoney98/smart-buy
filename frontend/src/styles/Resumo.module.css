@@ -1,0 +1,173 @@
+.resumo {
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-background);
+    
+}
+
+
+
+.resumo__container {
+    width: 70%;
+    max-width: 700px;
+    min-width: 300px;
+    padding: 4px;
+    display: grid;
+    align-items: center;
+    opacity: 0;
+    
+
+    animation: fadeSlideDown 1s ease forwards;
+}
+
+.resumo__content{
+    border-radius: 10px;
+    box-shadow: var(--black-box-shadow);
+    padding: 24px;
+    background-color: white;
+}
+
+.resumo__content_icon{
+    margin: 24px 12px 24px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.resumo__content_text{
+    text-align: center;
+    margin-top: 24px;
+    
+}
+.resumo__content_text h2{
+    margin-bottom: 16px;
+   
+}
+
+.resumo__content_information{
+    display: flex;
+    gap:24px
+}
+
+.resumo__content_summary{
+
+    gap: 16px;
+    display: grid;
+    width: 100%;
+    
+}
+
+.resumo__content_date{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    
+
+    
+   
+}
+
+.resumo__content_item_select__arrow {
+  width: 160px;
+  padding: 8px 40px 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+
+  appearance: none;
+
+  background-image: url("../assets/arrow_down.png");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.resumo__content_date_button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.resumo__content_date_button button {
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    font-size: 18px;
+    background-color: var(--green-button);
+    color: white;
+    border: 1px solid var(--green-button);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.card__content{
+    border-radius: 10px;
+    border: 2px solid var(--grey-border);
+    background-color: var(--grey-background);
+    padding: 12px;
+    min-width: 350px;
+    font-size: 14px;
+    max-height: 260px;
+    overflow-y: auto;
+    
+}
+
+.card__content h4{
+    margin: 0px 0px 20px 0px;
+}
+
+.card__line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.card__line p{
+    margin: 0;
+}
+
+.card__line__emphasis{
+    color: var(--green-button);
+    font-weight: 700;
+}
+
+.card__line__partition{
+    border-bottom: 2px solid var(--grey-border);
+    padding-bottom: 4px;
+}
+
+.card__content select{
+    border: 1px solid var(--green-button);
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    appearance: none;          
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+
+
+
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

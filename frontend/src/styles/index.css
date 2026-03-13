@@ -1,0 +1,30 @@
+:root {
+  --green-button: hsl(160 84% 39%);
+  --green-shadow: hsl(160 84% 39% / 0.4);
+  --green-box-shadow: 0px 0px 10px hsl(160 84% 39% / 0.2);
+  --green-background: hsl(160 84% 39% / 0.1);
+  --grey-text: hsl(220 10% 45%);
+  --grey-background: #F9FAFB;
+  --grey-border: #E5E7EB;
+  --red-reject: #ED1C24;
+  --red-priority: #D32F2F;
+  --orange-priority: #FB8C00;
+  --yellow-priority: #F9A825;
+  --green-priority: #2E7D32;
+  --black-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Inter, system-ui, sans-serif;
+    
+
+}
+
+p {
+    color: var(--grey-text);
+}

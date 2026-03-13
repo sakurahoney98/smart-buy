@@ -1,0 +1,40 @@
+.card__item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.card__column_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.card__priority_indicator{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: blueviolet;
+    margin-left: 8px;
+}
+
+
+
+.card__column_right p{
+    margin: 4px 0px 0px 0px;
+    text-align: end;
+    
+}
+
+.card__line__small{
+    font-size: 12px;
+    color: var(--grey-text);
+
+}
+
+.card__line__emphasis{
+    color: var(--green-button);
+    font-weight: 700;
+}

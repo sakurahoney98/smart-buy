@@ -1,0 +1,106 @@
+.lista {
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-background);
+}
+
+.lista__container {
+    width: 60%;
+    max-width: 520px;
+    min-width: 300px;
+    padding: 4px;
+    display: grid;
+    align-items: center;
+    opacity: 0;
+
+    animation: fadeSlideDown 1s ease forwards;
+}
+
+.lista__content {
+    border-radius: 10px;
+    box-shadow: var(--black-box-shadow);
+    padding: 32px;
+    max-height: 640px;
+    overflow-y: auto;
+    background: white;
+
+
+}
+
+.lista__content_icon {
+    margin: 24px 12px 24px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista__content_text {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.lista__content_list_item {
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 16px;
+    gap: 16px;
+    display: grid;
+    scroll-behavior: smooth;
+}
+
+
+.lista__content_button {
+    margin-top: 20px;
+    display: grid;
+    gap: 16px;
+
+}
+
+.lista__content_button button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lista__content_button__adicionar {
+    height: 36px;
+    border-radius: 5px;
+    border: 1px dashed var(--green-button);
+    color: var(--green-button);
+    background: white;
+
+
+}
+
+.lista__content_button__avancar {
+    height: 40px;
+    font-size: 18px;
+    background-color: var(--green-button);
+    color: white;
+    border: 1px solid var(--green-button);
+    border-radius: 10px;
+
+}
+
+.lista__content_button__avancar:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+
+
+
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

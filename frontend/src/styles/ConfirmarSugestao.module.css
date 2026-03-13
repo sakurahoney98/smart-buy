@@ -1,0 +1,132 @@
+.confirmacao {
+    padding: 20px;
+    height: 100dvh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-background);
+}
+
+.confirmacao__container {
+    width: 70%;
+    max-width: 600px;
+    min-width: 300px;
+    padding: 4px;
+    display: grid;
+    align-items: center;
+    opacity: 0;
+
+    animation: fadeSlideDown 1s ease forwards;
+}
+
+.confirmacao__content {
+    border-radius: 10px;
+    box-shadow: var(--black-box-shadow);
+    padding: 24px;
+    background: white;
+}
+
+.confirmacao__content_icon {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background-color: var(--green-background);
+    box-shadow: 0 0 20px hsl(160 84% 39% / 0.6),
+        0 0 35px hsl(160 84% 39% / 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 24px auto;
+
+
+}
+
+.confirmacao__content_text {
+    text-align: center;
+}
+
+.confirmacao__content_value {
+    border-radius: 10px;
+    border: 1px solid var(--green-button);
+    background-color: var(--green-background);
+    text-align: center;
+    padding: 16px;
+    margin: 24px 0px 24px 0px;
+}
+
+.confirmacao__content_value h1 {
+    color: var(--green-button);
+    margin: 12px;
+}
+
+.confirmacao__content_value p {
+    margin: 4px;
+}
+
+.confirmacao__content_button {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.confirmacao__content_button button {
+    border-radius: 10px;
+    border: 1px solid;
+    flex: 1;
+    max-width: 240px;
+    height: 52px;
+    font-size: 20px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.confirmacao__content_button button:hover img {
+    filter: brightness(0) invert(1);
+
+}
+
+.confirmacao__content_button__rejeitar {
+    border-color: var(--red-reject);
+    color: var(--red-reject);
+
+}
+
+.confirmacao__content_button__aceitar {
+    border-color: var(--green-button);
+    color: var(--green-button);
+
+}
+
+.confirmacao__content_button__rejeitar:hover {
+    background-color: var(--red-reject);
+    color: white;
+
+}
+
+.confirmacao__content_button__aceitar:hover {
+    background-color: var(--green-button);
+    color: white;
+
+}
+
+
+
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

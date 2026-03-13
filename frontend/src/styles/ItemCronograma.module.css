@@ -1,0 +1,47 @@
+.cronograma__item{
+    border-radius: 10px;
+    border: 2px solid var(--grey-border);
+    background-color: var(--grey-background);
+    padding: 16px;
+    min-width: 350px;
+    font-size: 14px;
+    margin-top: 8px;
+
+    
+}
+
+.cronograma__item h2{
+    margin: 8px 0px 12px 0px;
+    color: var(--green-button);
+}
+
+.cronograma__item_action{
+    margin-bottom: 20px;
+}
+
+.cronograma__item_details{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h4{
+    margin: 0;
+}
+
+.cronograma__item p{
+    margin-top: 8px;
+}
+
+.cronograma__item_details{
+    font-size: 14px;
+}
+
+.cronograma__item_details p{
+    margin-bottom: 8px;
+}
+
+.cronograma__emphasis{
+    color: var(--green-button);
+    font-weight: 700;
+}

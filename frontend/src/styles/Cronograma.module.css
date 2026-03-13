@@ -1,0 +1,97 @@
+.cronograma {
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-background);
+    
+}
+
+.cronograma__container {
+    width: 70%;
+    max-height: 100%;
+    min-width: 300px;
+    padding: 4px;
+    display: grid;
+    align-items: center;
+    opacity: 0;
+    margin-bottom: 8px;
+    
+
+    animation: fadeSlideDown 1s ease forwards;
+}
+
+.cronograma__content{
+    border-radius: 10px;
+    box-shadow: var(--black-box-shadow);
+    padding: 24px;
+    background-color: white;
+}
+
+.cronograma__content_icon{
+    margin: 24px 12px 24px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cronograma__content_text{
+    text-align: center;
+    margin-top: 24px;
+    
+}
+.cronograma__content_text h2{
+    margin-bottom: 8px;
+   
+}
+
+.cronograma__content_buttons_download{
+    padding: 8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cronograma__content_buttons_download button{
+    height: 36px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid var(--grey-border);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    background-color: var(--grey-background);
+    cursor: pointer;
+}
+
+.cronograma__content_information{
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+    gap:24px
+}
+
+
+
+
+
+
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

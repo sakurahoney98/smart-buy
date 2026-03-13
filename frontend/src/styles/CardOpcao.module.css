@@ -1,0 +1,43 @@
+.option{
+    padding: 16px;
+    box-shadow: var(--black-box-shadow);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap:8px;
+
+
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+
+    
+    
+}
+
+.option__text{
+    
+    display: grid;
+}
+
+.option__text h3{
+    margin: 0
+}
+
+.option__icon{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.option p{
+    font-size: 16px;
+}
+
+.option:hover {
+    transform: scale(1.02);
+     box-shadow:
+        0px 0px 15px var(--green-shadow);
+}

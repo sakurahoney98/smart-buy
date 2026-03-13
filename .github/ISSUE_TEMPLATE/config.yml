@@ -1,0 +1,23 @@
+blank_issues_enabled: false
+contact_links: []
+
+feature_requests_enabled: false
+bug_report_contact_links: []
+
+issue_templates:
+  - name: "🐞 Relatar um Bug"
+    about: "Nos informe sobre algum bug ou problema"
+    title: "[BUG] "
+    labels: ["bug"]
+    body: "relatar-bug.md"
+  - name: "✨ Nova Funcionalidade"
+    about: "Sugira uma melhoria"
+    title: "[MELHORIA] "
+    labels: ["enhancement"]
+    body: "sugerir-funcionalidade.md"
+  - name: "❓ Dúvida"
+    about: "Faça uma pergunta"
+    title: "[DÚVIDA] "
+    labels: ["question"]
+    body: "tenho-uma-pergunta.md"
+
