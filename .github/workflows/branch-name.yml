@@ -2,7 +2,9 @@ name: Validate Branch Name
 
 on:
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - feature/**
 
 jobs:
   check-branch:
