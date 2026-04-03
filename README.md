@@ -3,7 +3,7 @@
 ![banner-smartbuy](frontend/src/assets/banner_smartbuy.png)
 
 # SmartBuy 🛒💡
-![Status](https://img.shields.io/badge/status-finalizado-gree) ![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0--SNAPSHOT-blue) ![License](https://img.shields.io/badge/licen%C3%A7a-Apache_License_2.0-yellow) ![Testes](https://img.shields.io/badge/test-passed-gree)
+![Status](https://img.shields.io/badge/status-finalizado-gree) ![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.1-blue) ![License](https://img.shields.io/badge/licen%C3%A7a-Apache_License_2.0-yellow) ![Testes](https://img.shields.io/badge/test-passed-gree)
 
 
 Planejamento inteligente de compras com foco na sua saúde financeira
