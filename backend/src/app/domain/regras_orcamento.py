@@ -239,7 +239,7 @@ def proximo_parcelamento_longo_livre() -> int:
     mes = 0
 
     for data in calendario:
-        if data["permitido_parcelamento_longo"] == 0 or data["item_monstro_ativo"] == 1:
+        if data["permitido_parcelamento_longo"] == 0 or data["item_monstro_ativo"] == 1 or data['orcamento_reservado'] == 1:
             mes += 1
         else:
             break
